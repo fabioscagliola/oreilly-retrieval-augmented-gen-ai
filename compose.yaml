@@ -1,0 +1,8 @@
+services:
+  jupiter:
+    command: start-notebook.sh
+    image: jupyter/base-notebook:latest
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/home/jovyan/work
